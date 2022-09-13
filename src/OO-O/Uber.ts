@@ -11,11 +11,11 @@ export default class Uber {
     }
 
     startPath(): void {
-        console.log(`O => Iniciando a corrida!`)
+        console.log(`Iniciando a corrida!`)
     }
 
     configure(): void {
-        console.log(`O => Levar o user ${this.username}, do ponto ${this.from} até o ponto ${this.to}`)
+        console.log(`Levar o user ${this.username}, do ponto ${this.from} até o ponto ${this.to}`)
         this.startPath()
     }
 }

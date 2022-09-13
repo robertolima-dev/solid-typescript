@@ -7,17 +7,18 @@ export default class TopCar implements IVehicleCar, IVehicle {
         color: string,
         year: number,
         engine: number,
-        seats: number
+        seats: number,
+        doors: number
     ) {
-        this.configureCar(color, year, engine, seats)
+        this.configureCar(color, year, engine, seats, doors)
     }
 
     startVehicle(): void {
-        console.log('I => ligando os motores')
+        console.log('ligando os motores')
     }
 
-    configureCar(color: string, year: number, engine: number, seats: number): void {
-        console.log(`I => carro da cor ${color}, do ano ${year} com motor ${engine} e com ${seats} assentos.`)
+    configureCar(color: string, year: number, engine: number, seats: number, doors: number): void {
+        console.log(`carro da cor ${color}, do ano ${year} com motor ${engine}, com ${seats} assentos e com ${doors} portas`)
 
         this.startVehicle()
 

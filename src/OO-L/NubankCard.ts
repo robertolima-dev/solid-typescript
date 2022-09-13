@@ -3,10 +3,10 @@ import IPaymentInstrument from "./IPaymentInstrument";
 export default abstract class NubankCard implements IPaymentInstrument {
 
     validate(): void {
-        console.log('L => validacao')
+        console.log('validacao')
     }
 
     collectPayment(): void {
-        console.log('L => pagamento realizado')
+        console.log('pagamento realizado')
     }
 }

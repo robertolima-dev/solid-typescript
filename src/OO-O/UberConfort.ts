@@ -9,7 +9,7 @@ export default class UberConfort extends Uber {
 
     selectConfortType(color: string, leatherSeat: boolean): void {
 
-        console.log(`O => A cor do carro tem que ser: ${color}. Banco de couro: ${leatherSeat ? 'sim' : 'não'}`)
+        console.log(`A cor do carro tem que ser: ${color}. Banco de couro: ${leatherSeat ? 'sim' : 'não'}`)
 
     }
 }

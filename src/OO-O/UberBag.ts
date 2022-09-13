@@ -11,7 +11,7 @@ export default class UberBag extends Uber {
 
     selectBagSize(bagSize: string): void {
 
-        console.log(`O => O tamanho do bagageiro tem que ser: ${bagSize}`)
+        console.log(`O tamanho do bagageiro tem que ser: ${bagSize}`)
 
     }
 }

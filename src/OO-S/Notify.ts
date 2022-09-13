@@ -11,8 +11,8 @@ export default class Notify {
 
     sendEmail(): boolean {
 
-        console.log(`S => Enviando email para: ${this.customer.name}`)
-        console.log(`S => Email do user: ${this.customer.email}`)
+        console.log(`Enviando email para: ${this.customer.name}`)
+        console.log(`Email do user: ${this.customer.email}`)
 
         this.customer.name
         this.customer.email

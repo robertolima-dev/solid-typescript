@@ -12,11 +12,11 @@ export default class TopMotorcycle implements IVehicleMotorcycle, IVehicle {
     }
 
     startVehicle(): void {
-        console.log('I => ligando os motores')
+        console.log('ligando os motores')
     }
 
     configureMotorcycle(color: string, year: number, engine: number): void {
-        console.log(`I => moto da cor ${color}, do ano ${year} e com motor ${engine}cc.`)
+        console.log(`moto da cor ${color}, do ano ${year} e com motor ${engine}cc.`)
 
         this.startVehicle()
     }

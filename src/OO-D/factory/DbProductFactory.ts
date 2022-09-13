@@ -6,7 +6,7 @@ import PostgresDbProduct from "../model/PostgresDbProduct";
 
 export default class DbProductFactory {
 
-    private static type: Db = Db.POSTGRESQL
+    private static type: Db = Db.MYSQL
 
     public static create(): IDbProduct {
 

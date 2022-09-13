@@ -13,7 +13,7 @@ import Uber from "./OO-O/Uber";
 import UberBag from "./OO-O/UberBag";
 import UberConfort from "./OO-O/UberConfort";
 
-console.log('***** S *****')
+console.log('****************** S ******************')
 // S => Single responsibility principle - SRP =>
 // Nunca deve haver mais de um motivo para mudar uma classe
 const customer = new Customer('Roberto Lima', 'robertolima.izphera@gmail.com', 'M')
@@ -27,7 +27,7 @@ const notification2 = new Notify(customer2)
 notification2.sendEmail()
 
 
-console.log('***** O *****')
+console.log('****************** O ******************')
 // O => Open/close principle - OCP =>
 // Aberto para extensão e fechado para modificação
 const uber1 = new Uber('João', 'Rua Januário, 99', 'Av. João Dias, 1200')
@@ -39,9 +39,9 @@ uber2.configure()
 const uber3 = new UberConfort('Fábio', 'Rua Casemiro de Abreu, 72', 'Av Vereador José Diniz, 450', 'preto')
 uber3.configure()
 
-console.log('***** L *****')
+console.log('****************** L ******************')
 // L => Liskov substitution principle - LSP =>
-// Uma classe derivada pode ser substituível por sua classe base
+// Uma classe derivada pode ser substituível por sua classe base ou substituir a classe abstrata pela interface
 const creditCard = new CreditCard()
 
 creditCard.validate()
@@ -58,14 +58,14 @@ rewardsCard.validate()
 rewardsCard.collectPayment()
 
 
-console.log('***** I *****')
+console.log('****************** I ******************')
 // I => Interface segregation principle - ISP =>
 // Classes não devem ser forçadas a depender de métodos que não usam
-new TopCar('preta', 2020, 4.1, 6)
+new TopCar('preta', 2020, 4.1, 6, 4)
 new TopMotorcycle('vermelha', 2020, 600)
 
 
-console.log('***** D *****')
+console.log('****************** D ******************')
 // D => Dependency Inversion principle - DIP =>
 // Módulos de alto nível não devem depender de módulos de baixo nível e ambos devem depender de abstrações
 const payment = new Payment()

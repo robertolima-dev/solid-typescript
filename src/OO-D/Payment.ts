@@ -1,5 +1,4 @@
 import DbProductFactory from "./factory/DbProductFactory"
-import MySQLProduct from "./model/MySQLProduct"
 
 export default class Payment {
 
@@ -13,4 +12,5 @@ export default class Payment {
         return product
 
     }
+
 }
