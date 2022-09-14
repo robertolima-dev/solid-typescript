@@ -18,4 +18,5 @@ export default class Uber {
         console.log(`Levar o user ${this.username}, do ponto ${this.from} até o ponto ${this.to}`)
         this.startPath()
     }
+
 }

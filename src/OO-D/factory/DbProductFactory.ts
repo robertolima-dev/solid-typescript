@@ -1,12 +1,12 @@
-import Db from "../model/Db";
-import IDbProduct from "../model/IDbProduct";
-import MongoDbProduct from "../model/MongoDbProduct";
-import MySQLProduct from "../model/MySQLProduct";
-import PostgresDbProduct from "../model/PostgresDbProduct";
+import Db from "../models/Db";
+import IDbProduct from "../models/IDbProduct";
+import MongoDbProduct from "../models/MongoDbProduct";
+import MySQLProduct from "../models/MySQLProduct";
+import PostgresDbProduct from "../models/PostgresDbProduct";
 
 export default class DbProductFactory {
 
-    private static type: Db = Db.MYSQL
+    private static type: Db = Db.MONGODB
 
     public static create(): IDbProduct {
 

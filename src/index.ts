@@ -15,13 +15,13 @@ import UberConfort from "./OO-O/UberConfort";
 
 console.log('****************** S ******************')
 // S => Single responsibility principle - SRP =>
-// Nunca deve haver mais de um motivo para mudar uma classe
+// Nunca deve haver mais de um motivo para uma classe mudar
 const customer = new Customer('Roberto Lima', 'robertolima.izphera@gmail.com', 'M')
 const notification = new Notify(customer)
 
 notification.sendEmail()
 
-const customer2 = new Customer('Arthur', 'arthur@gmail.com', 'M')
+const customer2 = new Customer('Rayana', 'rayana@gmail.com', 'F')
 const notification2 = new Notify(customer2)
 
 notification2.sendEmail()
@@ -61,8 +61,8 @@ rewardsCard.collectPayment()
 console.log('****************** I ******************')
 // I => Interface segregation principle - ISP =>
 // Classes não devem ser forçadas a depender de métodos que não usam
-new TopCar('preta', 2020, 4.1, 6, 4)
-new TopMotorcycle('vermelha', 2020, 600)
+new TopCar('prata', 2018, 2.0, 5, 4)
+new TopMotorcycle('vermelha', 2022, 800)
 
 
 console.log('****************** D ******************')
